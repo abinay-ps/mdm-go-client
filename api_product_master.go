@@ -761,7 +761,7 @@ Update Product Details
 */
 
 type ProductMasterApiProductUpdateproductProductidProductidPutOpts struct { 
-	ProductMaster optional.Interface{}
+	ProductMaster optional.Interface
 }
 
 func (a *ProductMasterApiService) ProductUpdateproductProductidProductidPut(ctx context.Context, productid int32, localVarOptionals *ProductMasterApiProductUpdateproductProductidProductidPutOpts) (HandlerResponse, *http.Response, error) {
@@ -800,7 +800,7 @@ func (a *ProductMasterApiService) ProductUpdateproductProductidProductidPut(ctx 
 	}
 	// body params
 	if localVarOptionals != nil && localVarOptionals.ProductMaster.IsSet() {
-		localVarPostBody = &localVarOptionals.ProductMaster.Value()
+		localVarPostBody = localVarOptionals.ProductMaster.Value()
 		
 	}
 	r, err := a.client.prepareRequest(ctx, localVarPath, localVarHttpMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, localVarFileName, localVarFileBytes)
