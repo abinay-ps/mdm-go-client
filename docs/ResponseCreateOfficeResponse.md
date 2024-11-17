@@ -1,0 +1,13 @@
+# ResponseCreateOfficeResponse
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**CreatedAt** | **string** |  | [optional] [default to null]
+**CreatedBy** | **string** | // OfficeTypeID      int       &#x60;json:\&quot;office_type_id\&quot;&#x60; // OfficeTypeCode    string    &#x60;json:\&quot;office_type_code\&quot;&#x60; // EmailID           string    &#x60;json:\&quot;email_id\&quot;&#x60; // Pincode           int       &#x60;json:\&quot;pincode\&quot;&#x60; // ContactNumber     string    &#x60;json:\&quot;contact_number\&quot;&#x60; // ReportingOfficeID int       &#x60;json:\&quot;reporting_office_id\&quot;&#x60; // OfficeStatusID    int       &#x60;json:\&quot;office_status_id\&quot;&#x60; // CSIFacilityID     string    &#x60;json:\&quot;csi_facility_id\&quot;&#x60; // ClosedDate        time.Time &#x60;json:\&quot;closed_date\&quot;&#x60; // SupportedDocPath  string    &#x60;json:\&quot;supported_document_path\&quot;&#x60; // AdminFlag         bool      &#x60;json:\&quot;admin_flag\&quot;&#x60; // SolID             string    &#x60;json:\&quot;sol_id\&quot;&#x60; // PliID             string    &#x60;json:\&quot;pli_id\&quot;&#x60; // GSTNCode          string    &#x60;json:\&quot;gstn_code\&quot;&#x60; // PAOCode           string    &#x60;json:\&quot;pao_code\&quot;&#x60; // ATMID             string    &#x60;json:\&quot;atm_id\&quot;&#x60; // QRTerminalID      string    &#x60;json:\&quot;qr_terminal_id\&quot;&#x60; // WEGCode           string    &#x60;json:\&quot;weg_code\&quot;&#x60; // DDOCode           string    &#x60;json:\&quot;ddo_code\&quot;&#x60; // OfficeLevel       string    &#x60;json:\&quot;office_level\&quot;&#x60; // DAC               string    &#x60;json:\&quot;dac\&quot;&#x60; // WorkingDays       string    &#x60;json:\&quot;working_days\&quot;&#x60; // WorkingHoursFrom  string    &#x60;json:\&quot;working_hours_from\&quot;&#x60; // WorkingHoursTo    string    &#x60;json:\&quot;working_hours_to\&quot;&#x60; // ValidFrom         string    &#x60;json:\&quot;valid_from\&quot;&#x60; // ValidTo           string    &#x60;json:\&quot;valid_to\&quot;&#x60; // Remarks           string    &#x60;json:\&quot;remarks\&quot;&#x60; // ApprovalStatus    string    &#x60;json:\&quot;approval_status\&quot;&#x60; // ApprovedBy        string    &#x60;json:\&quot;approved_by\&quot;&#x60; | [optional] [default to null]
+**OfficeId** | **int32** |  | [optional] [default to null]
+**OfficeName** | **string** |  | [optional] [default to null]
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+

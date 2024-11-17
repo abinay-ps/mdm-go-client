@@ -1,53 +1,53 @@
 # \DomesticTariffApi
 
-All URIs are relative to *https://localhost:8080/v1*
+All URIs are relative to *http://localhost:8080/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**DomesticproductsTariffApsDapltariffGet**](DomesticTariffApi.md#DomesticproductsTariffApsDapltariffGet) | **Get** /domesticproducts/tariff/aps/dapltariff | Get DAPL Tariff
-[**DomesticproductsTariffApsSdstariffGet**](DomesticTariffApi.md#DomesticproductsTariffApsSdstariffGet) | **Get** /domesticproducts/tariff/aps/sdstariff | Get SDS Tariff
-[**DomesticproductsTariffBillmailGet**](DomesticTariffApi.md#DomesticproductsTariffBillmailGet) | **Get** /domesticproducts/tariff/billmail | Get Bill Mail Tariff
-[**DomesticproductsTariffBlindliteratureGet**](DomesticTariffApi.md#DomesticproductsTariffBlindliteratureGet) | **Get** /domesticproducts/tariff/blindliterature | Get Blind Literature Tariff
-[**DomesticproductsTariffBookpacketGet**](DomesticTariffApi.md#DomesticproductsTariffBookpacketGet) | **Get** /domesticproducts/tariff/bookpacket | Get Book Packet Tariff
-[**DomesticproductsTariffBpperiodicalGet**](DomesticTariffApi.md#DomesticproductsTariffBpperiodicalGet) | **Get** /domesticproducts/tariff/bpperiodical | Get Book Packet containing Periodical Tariff
-[**DomesticproductsTariffBusinessparcelGet**](DomesticTariffApi.md#DomesticproductsTariffBusinessparcelGet) | **Get** /domesticproducts/tariff/businessparcel | Get Business Parcel Tariff
-[**DomesticproductsTariffDirectpostGet**](DomesticTariffApi.md#DomesticproductsTariffDirectpostGet) | **Get** /domesticproducts/tariff/directpost | Get Direct Post Tariff
-[**DomesticproductsTariffEmoGet**](DomesticTariffApi.md#DomesticproductsTariffEmoGet) | **Get** /domesticproducts/tariff/emo/ | Get Emo Tariff
-[**DomesticproductsTariffIpoGet**](DomesticTariffApi.md#DomesticproductsTariffIpoGet) | **Get** /domesticproducts/tariff/ipo/ | Get IPO Tariff
-[**DomesticproductsTariffLetterGet**](DomesticTariffApi.md#DomesticproductsTariffLetterGet) | **Get** /domesticproducts/tariff/letter | Get Letter Tariff
-[**DomesticproductsTariffLettercardGet**](DomesticTariffApi.md#DomesticproductsTariffLettercardGet) | **Get** /domesticproducts/tariff/lettercard | Get Letter Card Tariff
-[**DomesticproductsTariffMagazinepostGet**](DomesticTariffApi.md#DomesticproductsTariffMagazinepostGet) | **Get** /domesticproducts/tariff/magazinepost | Get Magazine Post Tariff
-[**DomesticproductsTariffNationalbillmailGet**](DomesticTariffApi.md#DomesticproductsTariffNationalbillmailGet) | **Get** /domesticproducts/tariff/nationalbillmail | Get National Bill Mail Tariff
-[**DomesticproductsTariffNewspaperGet**](DomesticTariffApi.md#DomesticproductsTariffNewspaperGet) | **Get** /domesticproducts/tariff/newspaper | Get Newspaper Tariff
-[**DomesticproductsTariffNewspaperbundleGet**](DomesticTariffApi.md#DomesticproductsTariffNewspaperbundleGet) | **Get** /domesticproducts/tariff/newspaperbundle | Get Newspaper Bundle Tariff
-[**DomesticproductsTariffNonvariantproductsProductCodeGet**](DomesticTariffApi.md#DomesticproductsTariffNonvariantproductsProductCodeGet) | **Get** /domesticproducts/tariff/nonvariantproducts/{ProductCode} | Get Non Variant Tariff
-[**DomesticproductsTariffParcelGet**](DomesticTariffApi.md#DomesticproductsTariffParcelGet) | **Get** /domesticproducts/tariff/parcel | Get Parcel Tariff
-[**DomesticproductsTariffPatternsamplepacketGet**](DomesticTariffApi.md#DomesticproductsTariffPatternsamplepacketGet) | **Get** /domesticproducts/tariff/patternsamplepacket | Get Pattern Sample Packet Tariff
-[**DomesticproductsTariffPostcardGet**](DomesticTariffApi.md#DomesticproductsTariffPostcardGet) | **Get** /domesticproducts/tariff/postcard | Get Post Card Tariff
-[**DomesticproductsTariffPrintedbookGet**](DomesticTariffApi.md#DomesticproductsTariffPrintedbookGet) | **Get** /domesticproducts/tariff/printedbook | Get Printed Book Tariff
-[**DomesticproductsTariffRetailproductsProductCodeGet**](DomesticTariffApi.md#DomesticproductsTariffRetailproductsProductCodeGet) | **Get** /domesticproducts/tariff/retailproducts/{ProductCode} | Get Retail Post Tariff
-[**DomesticproductsTariffSpeedpostGet**](DomesticTariffApi.md#DomesticproductsTariffSpeedpostGet) | **Get** /domesticproducts/tariff/speedpost | Get Domestic Speed Post Tariff
+[**DomesticTariffsApsDaplGet**](DomesticTariffApi.md#DomesticTariffsApsDaplGet) | **Get** /domestic-tariffs/aps-dapl | Get DAPL tariff based on product code, weight, dimensions, and pincodes
+[**DomesticTariffsApsSdsGet**](DomesticTariffApi.md#DomesticTariffsApsSdsGet) | **Get** /domestic-tariffs/aps-sds | Get SDS tariff based on product code, weight, and optional parameters
+[**DomesticTariffsBillMailsGet**](DomesticTariffApi.md#DomesticTariffsBillMailsGet) | **Get** /domestic-tariffs/bill-mails | Get Bill Mail tariff based on product code, weight, and quantity
+[**DomesticTariffsBlindLiteraturesGet**](DomesticTariffApi.md#DomesticTariffsBlindLiteraturesGet) | **Get** /domestic-tariffs/blind-literatures | Get blind literature tariff based on various parameters
+[**DomesticTariffsBookPacketPeriodicalsGet**](DomesticTariffApi.md#DomesticTariffsBookPacketPeriodicalsGet) | **Get** /domestic-tariffs/book-packet-periodicals | Get the book packet periodical tariff based on various parameters
+[**DomesticTariffsBookPacketsGet**](DomesticTariffApi.md#DomesticTariffsBookPacketsGet) | **Get** /domestic-tariffs/book-packets | Get book tariff based on various parameters
+[**DomesticTariffsBusinessParcelsGet**](DomesticTariffApi.md#DomesticTariffsBusinessParcelsGet) | **Get** /domestic-tariffs/business-parcels | Get business parcel tariff based on various parameters
+[**DomesticTariffsDirectPostsGet**](DomesticTariffApi.md#DomesticTariffsDirectPostsGet) | **Get** /domestic-tariffs/direct-posts | Get direct post tariff based on various parameters
+[**DomesticTariffsEmoGet**](DomesticTariffApi.md#DomesticTariffsEmoGet) | **Get** /domestic-tariffs/emo | Get EMO tariff based on product code and EMO amount
+[**DomesticTariffsIpoGet**](DomesticTariffApi.md#DomesticTariffsIpoGet) | **Get** /domestic-tariffs/ipo | Get IPO tariff based on product code and IPO amount
+[**DomesticTariffsLetterCardsGet**](DomesticTariffApi.md#DomesticTariffsLetterCardsGet) | **Get** /domestic-tariffs/letter-cards | Get lettercard tariff based on various parameters
+[**DomesticTariffsLettersGet**](DomesticTariffApi.md#DomesticTariffsLettersGet) | **Get** /domestic-tariffs/letters | Get letter tariff based on various parameters
+[**DomesticTariffsMagazinePostsGet**](DomesticTariffApi.md#DomesticTariffsMagazinePostsGet) | **Get** /domestic-tariffs/magazine-posts | Get Magazine Post tariff based on product code, weight, dimensions, and pincodes
+[**DomesticTariffsNationalBillMailsGet**](DomesticTariffApi.md#DomesticTariffsNationalBillMailsGet) | **Get** /domestic-tariffs/national-bill-mails | Get National Bill Mail tariff based on product code, weight, and quantity
+[**DomesticTariffsNewspaperBundlesGet**](DomesticTariffApi.md#DomesticTariffsNewspaperBundlesGet) | **Get** /domestic-tariffs/newspaper-bundles | Get newspaper bundle tariff based on various parameters
+[**DomesticTariffsNewspapersGet**](DomesticTariffApi.md#DomesticTariffsNewspapersGet) | **Get** /domestic-tariffs/newspapers | Get newspaper tariff based on various parameters
+[**DomesticTariffsNonVariantsGet**](DomesticTariffApi.md#DomesticTariffsNonVariantsGet) | **Get** /domestic-tariffs/non-variants | Get the non-variant product tariff based on the product code
+[**DomesticTariffsParcelsGet**](DomesticTariffApi.md#DomesticTariffsParcelsGet) | **Get** /domestic-tariffs/parcels | Get parcel tariff based on various parameters
+[**DomesticTariffsPatternSamplePacketsGet**](DomesticTariffApi.md#DomesticTariffsPatternSamplePacketsGet) | **Get** /domestic-tariffs/pattern-sample-packets | Get pattern sample packet tariff based on various parameters
+[**DomesticTariffsPostCardsGet**](DomesticTariffApi.md#DomesticTariffsPostCardsGet) | **Get** /domestic-tariffs/post-cards | Get Post Card tariff based on product code, weight, length, and width
+[**DomesticTariffsPrintedBooksGet**](DomesticTariffApi.md#DomesticTariffsPrintedBooksGet) | **Get** /domestic-tariffs/printed-books | Get printed book tariff based on various parameters
+[**DomesticTariffsRetailsGet**](DomesticTariffApi.md#DomesticTariffsRetailsGet) | **Get** /domestic-tariffs/retails | Get the retail post product tariff based on the product code
+[**DomesticTariffsSpeedPostsGet**](DomesticTariffApi.md#DomesticTariffsSpeedPostsGet) | **Get** /domestic-tariffs/speed-posts | Get speed letter tariff based on various parameters
 
 
-# **DomesticproductsTariffApsDapltariffGet**
-> HandlerResponse DomesticproductsTariffApsDapltariffGet(ctx, productCode, weight, sourcePincode, destinationPincode, optional)
-Get DAPL Tariff
+# **DomesticTariffsApsDaplGet**
+> ResponseGetDaplTariffApiResponse DomesticTariffsApsDaplGet(ctx, destinationPincode, productCode, sourcePincode, weight, optional)
+Get DAPL tariff based on product code, weight, dimensions, and pincodes
 
-Gives tariff for DAPL product
+Calculate the DAPL tariff using the provided details, including product code, weight, dimensions (length, width, height, diameter),
 
 ### Required Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **productCode** | **string**| Product Code | 
-  **weight** | **string**| Weight | 
-  **sourcePincode** | **string**| Source Pincode | 
-  **destinationPincode** | **string**| Destination Pincode | 
- **optional** | ***DomesticTariffApiDomesticproductsTariffApsDapltariffGetOpts** | optional parameters | nil if no parameters
+  **destinationPincode** | **int32**|  | 
+  **productCode** | **string**|  | 
+  **sourcePincode** | **int32**|  | 
+  **weight** | **float32**|  | 
+ **optional** | ***DomesticTariffApiDomesticTariffsApsDaplGetOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a DomesticTariffApiDomesticproductsTariffApsDapltariffGetOpts struct
+Optional parameters are passed through a pointer to a DomesticTariffApiDomesticTariffsApsDaplGetOpts struct
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -55,21 +55,21 @@ Name | Type | Description  | Notes
 
 
 
- **rEG** | **optional.String**| Reg | 
- **iNS** | **optional.String**| Ins | 
- **iNSC** | **optional.String**| InsC | 
- **pOD** | **optional.String**| Pod | 
- **aCK** | **optional.String**| Ack | 
- **vPP** | **optional.String**| Vpp | 
- **aMS** | **optional.String**| Ams | 
- **length** | **optional.String**| Length | 
- **width** | **optional.String**| Width | 
- **height** | **optional.String**| Height | 
- **diameter** | **optional.String**| Diameter | 
+ **aCK** | **optional.String**|  | 
+ **aMS** | **optional.String**|  | 
+ **iNS** | **optional.String**|  | 
+ **iNSC** | **optional.String**|  | 
+ **pOD** | **optional.String**|  | 
+ **rEG** | **optional.String**|  | 
+ **vPP** | **optional.String**|  | 
+ **diameter** | **optional.Float32**|  | 
+ **height** | **optional.Float32**|  | 
+ **length** | **optional.Float32**|  | 
+ **width** | **optional.Float32**|  | 
 
 ### Return type
 
-[**HandlerResponse**](handler.Response.md)
+[**ResponseGetDaplTariffApiResponse**](response.GetDAPLTariffAPIResponse.md)
 
 ### Authorization
 
@@ -82,40 +82,40 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **DomesticproductsTariffApsSdstariffGet**
-> HandlerResponse DomesticproductsTariffApsSdstariffGet(ctx, productCode, weight, optional)
-Get SDS Tariff
+# **DomesticTariffsApsSdsGet**
+> ResponseGetSdsTariffApiResponse DomesticTariffsApsSdsGet(ctx, productCode, weight, optional)
+Get SDS tariff based on product code, weight, and optional parameters
 
-Gives tariff for APS SDS Product
+Calculate the SDS tariff using the product code, weight, and optional parameters such as REG, INS, ACK, VPP, AMS, and dimensions (length, width, height).
 
 ### Required Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **productCode** | **string**| Product Code | 
-  **weight** | **string**| Weight | 
- **optional** | ***DomesticTariffApiDomesticproductsTariffApsSdstariffGetOpts** | optional parameters | nil if no parameters
+  **productCode** | **string**|  | 
+  **weight** | **float32**|  | 
+ **optional** | ***DomesticTariffApiDomesticTariffsApsSdsGetOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a DomesticTariffApiDomesticproductsTariffApsSdstariffGetOpts struct
+Optional parameters are passed through a pointer to a DomesticTariffApiDomesticTariffsApsSdsGetOpts struct
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
 
- **rEG** | **optional.String**| Reg | 
- **iNS** | **optional.String**| Ins | 
- **aCK** | **optional.String**| Ack | 
- **vPP** | **optional.String**| Vpp | 
- **aMS** | **optional.String**| Ams | 
- **length** | **optional.String**| Length | 
- **width** | **optional.String**| Width | 
- **height** | **optional.String**| Height | 
+ **aCK** | **optional.String**|  | 
+ **aMS** | **optional.String**|  | 
+ **iNS** | **optional.String**|  | 
+ **rEG** | **optional.String**|  | 
+ **vPP** | **optional.String**|  | 
+ **height** | **optional.Float32**|  | 
+ **length** | **optional.Float32**|  | 
+ **width** | **optional.Float32**|  | 
 
 ### Return type
 
-[**HandlerResponse**](handler.Response.md)
+[**ResponseGetSdsTariffApiResponse**](response.GetSDSTariffAPIResponse.md)
 
 ### Authorization
 
@@ -128,24 +128,24 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **DomesticproductsTariffBillmailGet**
-> HandlerResponse DomesticproductsTariffBillmailGet(ctx, productCode, weight, quantity)
-Get Bill Mail Tariff
+# **DomesticTariffsBillMailsGet**
+> ResponseGetBillMailTariffApiResponse DomesticTariffsBillMailsGet(ctx, productCode, quantity, weight)
+Get Bill Mail tariff based on product code, weight, and quantity
 
-Gives tariff for Bill Mail Service
+Calculate the Bill Mail tariff using the product code, weight, and quantity provided.
 
 ### Required Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **productCode** | **string**| Product Code | 
-  **weight** | **float32**| Weight | 
-  **quantity** | **int32**| Quantity | 
+  **productCode** | **string**|  | 
+  **quantity** | **int32**|  | 
+  **weight** | **float32**|  | 
 
 ### Return type
 
-[**HandlerResponse**](handler.Response.md)
+[**ResponseGetBillMailTariffApiResponse**](response.GetBillMailTariffAPIResponse.md)
 
 ### Authorization
 
@@ -158,41 +158,39 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **DomesticproductsTariffBlindliteratureGet**
-> HandlerResponse DomesticproductsTariffBlindliteratureGet(ctx, productCode, weight, optional)
-Get Blind Literature Tariff
+# **DomesticTariffsBlindLiteraturesGet**
+> ResponseGetBlindLiteratureTariffApiResponse DomesticTariffsBlindLiteraturesGet(ctx, productCode, weight, optional)
+Get blind literature tariff based on various parameters
 
-Gives tariff for Blind Literature
+Calculate the blind literature tariff using product details and additional optional parameters.
 
 ### Required Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **productCode** | **string**| Product Code | 
-  **weight** | **string**| Weight | 
- **optional** | ***DomesticTariffApiDomesticproductsTariffBlindliteratureGetOpts** | optional parameters | nil if no parameters
+  **productCode** | **string**|  | 
+  **weight** | **float32**|  | 
+ **optional** | ***DomesticTariffApiDomesticTariffsBlindLiteraturesGetOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a DomesticTariffApiDomesticproductsTariffBlindliteratureGetOpts struct
+Optional parameters are passed through a pointer to a DomesticTariffApiDomesticTariffsBlindLiteraturesGetOpts struct
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
 
- **rEGBL** | **optional.String**| RegBl | 
- **iNS** | **optional.String**| Ins | 
- **aCKBL** | **optional.String**| AckBl | 
- **vPP** | **optional.String**| Vpp | 
- **aMS** | **optional.String**| Ams | 
- **length** | **optional.String**| Length | 
- **width** | **optional.String**| Width | 
- **height** | **optional.String**| Height | 
- **diameter** | **optional.String**| Diameter | 
+ **aCKBL** | **optional.String**|  | 
+ **aMS** | **optional.String**|  | 
+ **rEGBL** | **optional.String**|  | 
+ **diameter** | **optional.Float32**|  | 
+ **height** | **optional.Float32**|  | 
+ **length** | **optional.Float32**|  | 
+ **width** | **optional.Float32**|  | 
 
 ### Return type
 
-[**HandlerResponse**](handler.Response.md)
+[**ResponseGetBlindLiteratureTariffApiResponse**](response.GetBlindLiteratureTariffAPIResponse.md)
 
 ### Authorization
 
@@ -205,41 +203,42 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **DomesticproductsTariffBookpacketGet**
-> HandlerResponse DomesticproductsTariffBookpacketGet(ctx, productCode, weight, optional)
-Get Book Packet Tariff
+# **DomesticTariffsBookPacketPeriodicalsGet**
+> ResponseGetBookTariffApiResponse DomesticTariffsBookPacketPeriodicalsGet(ctx, productCode, weight, optional)
+Get the book packet periodical tariff based on various parameters
 
-Gives tariff for Book Packet
+Calculate the tariff for a book packet using product details and additional optional parameters.
 
 ### Required Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **productCode** | **string**| Product Code | 
-  **weight** | **string**| Weight | 
- **optional** | ***DomesticTariffApiDomesticproductsTariffBookpacketGetOpts** | optional parameters | nil if no parameters
+  **productCode** | **string**|  | 
+  **weight** | **float32**|  | 
+ **optional** | ***DomesticTariffApiDomesticTariffsBookPacketPeriodicalsGetOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a DomesticTariffApiDomesticproductsTariffBookpacketGetOpts struct
+Optional parameters are passed through a pointer to a DomesticTariffApiDomesticTariffsBookPacketPeriodicalsGetOpts struct
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
 
- **rEG** | **optional.String**| Reg | 
- **iNS** | **optional.String**| Ins | 
- **aCK** | **optional.String**| Ack | 
- **vPP** | **optional.String**| Vpp | 
- **aMS** | **optional.String**| Ams | 
- **length** | **optional.String**| Length | 
- **width** | **optional.String**| Width | 
- **height** | **optional.String**| Height | 
- **diameter** | **optional.String**| Diameter | 
+ **aCK** | **optional.String**|  | 
+ **aMS** | **optional.String**|  | 
+ **iNS** | **optional.String**|  | 
+ **rEG** | **optional.String**|  | 
+ **vPP** | **optional.String**|  | 
+ **diameter** | **optional.Float32**|  | 
+ **height** | **optional.Float32**|  | 
+ **length** | **optional.Float32**|  | 
+ **value** | **optional.Float32**|  | 
+ **width** | **optional.Float32**|  | 
 
 ### Return type
 
-[**HandlerResponse**](handler.Response.md)
+[**ResponseGetBookTariffApiResponse**](response.GetBookTariffAPIResponse.md)
 
 ### Authorization
 
@@ -252,42 +251,42 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **DomesticproductsTariffBpperiodicalGet**
-> HandlerResponse DomesticproductsTariffBpperiodicalGet(ctx, productCode, weight, optional)
-Get Book Packet containing Periodical Tariff
+# **DomesticTariffsBookPacketsGet**
+> ResponseGetBookTariffApiResponse DomesticTariffsBookPacketsGet(ctx, productCode, weight, optional)
+Get book tariff based on various parameters
 
-Gives tariff for Book Packet containing Periodicals
+Calculate the book tariff using product details and various additional parameters.
 
 ### Required Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **productCode** | **string**| Product Code | 
-  **weight** | **string**| Weight | 
- **optional** | ***DomesticTariffApiDomesticproductsTariffBpperiodicalGetOpts** | optional parameters | nil if no parameters
+  **productCode** | **string**|  | 
+  **weight** | **float32**|  | 
+ **optional** | ***DomesticTariffApiDomesticTariffsBookPacketsGetOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a DomesticTariffApiDomesticproductsTariffBpperiodicalGetOpts struct
+Optional parameters are passed through a pointer to a DomesticTariffApiDomesticTariffsBookPacketsGetOpts struct
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
 
- **rEG** | **optional.String**| Reg | 
- **iNS** | **optional.String**| Ins | 
- **aCK** | **optional.String**| Ack | 
- **vPP** | **optional.String**| Vpp | 
- **aMS** | **optional.String**| Ams | 
- **value** | **optional.String**| Value | 
- **length** | **optional.String**| Length | 
- **width** | **optional.String**| Width | 
- **height** | **optional.String**| Height | 
- **diameter** | **optional.String**| Diameter | 
+ **aCK** | **optional.String**|  | 
+ **aMS** | **optional.String**|  | 
+ **iNS** | **optional.String**|  | 
+ **rEG** | **optional.String**|  | 
+ **vPP** | **optional.String**|  | 
+ **diameter** | **optional.Float32**|  | 
+ **height** | **optional.Float32**|  | 
+ **length** | **optional.Float32**|  | 
+ **value** | **optional.Float32**|  | 
+ **width** | **optional.Float32**|  | 
 
 ### Return type
 
-[**HandlerResponse**](handler.Response.md)
+[**ResponseGetBookTariffApiResponse**](response.GetBookTariffAPIResponse.md)
 
 ### Authorization
 
@@ -300,25 +299,25 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **DomesticproductsTariffBusinessparcelGet**
-> HandlerResponse DomesticproductsTariffBusinessparcelGet(ctx, productCode, weight, sourcePincode, destinationPincode, optional)
-Get Business Parcel Tariff
+# **DomesticTariffsBusinessParcelsGet**
+> ResponseGetBusinessParcelTariffApiResponse DomesticTariffsBusinessParcelsGet(ctx, destinationPincode, productCode, sourcePincode, weight, optional)
+Get business parcel tariff based on various parameters
 
-Gives tariff for Business Parcel
+Calculate the business parcel tariff using product details and additional optional parameters.
 
 ### Required Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **productCode** | **string**| Product Code | 
-  **weight** | **string**| Weight | 
-  **sourcePincode** | **string**| Source Pincode | 
-  **destinationPincode** | **string**| Destination Pincode | 
- **optional** | ***DomesticTariffApiDomesticproductsTariffBusinessparcelGetOpts** | optional parameters | nil if no parameters
+  **destinationPincode** | **string**|  | 
+  **productCode** | **string**|  | 
+  **sourcePincode** | **string**|  | 
+  **weight** | **float32**|  | 
+ **optional** | ***DomesticTariffApiDomesticTariffsBusinessParcelsGetOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a DomesticTariffApiDomesticproductsTariffBusinessparcelGetOpts struct
+Optional parameters are passed through a pointer to a DomesticTariffApiDomesticTariffsBusinessParcelsGetOpts struct
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -326,20 +325,20 @@ Name | Type | Description  | Notes
 
 
 
- **rEG** | **optional.String**| Reg | 
- **iNS** | **optional.String**| Ins | 
- **iNSC** | **optional.String**| InsC | 
- **aCK** | **optional.String**| Ack | 
- **vPP** | **optional.String**| Vpp | 
- **aMS** | **optional.String**| Ams | 
- **length** | **optional.String**| Length | 
- **width** | **optional.String**| Width | 
- **height** | **optional.String**| Height | 
- **diameter** | **optional.String**| Diameter | 
+ **aCK** | **optional.String**|  | 
+ **aMS** | **optional.String**|  | 
+ **iNS** | **optional.String**|  | 
+ **iNSC** | **optional.String**|  | 
+ **rEG** | **optional.String**|  | 
+ **vPP** | **optional.String**|  | 
+ **diameter** | **optional.Float32**|  | 
+ **height** | **optional.Float32**|  | 
+ **length** | **optional.Float32**|  | 
+ **width** | **optional.Float32**|  | 
 
 ### Return type
 
-[**HandlerResponse**](handler.Response.md)
+[**ResponseGetBusinessParcelTariffApiResponse**](response.GetBusinessParcelTariffAPIResponse.md)
 
 ### Authorization
 
@@ -352,26 +351,26 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **DomesticproductsTariffDirectpostGet**
-> HandlerResponse DomesticproductsTariffDirectpostGet(ctx, productCode, weight, quantity, sourcePincode, destinationPincode)
-Get Direct Post Tariff
+# **DomesticTariffsDirectPostsGet**
+> ResponseGetDirectPostTariffApiResponse DomesticTariffsDirectPostsGet(ctx, destinationPincode, productCode, quantity, sourcePincode, weight)
+Get direct post tariff based on various parameters
 
-Gives tariff for Direct Post
+Calculate the direct post tariff using the provided product details, weight, and pincode information.
 
 ### Required Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **productCode** | **string**| Product Code | 
-  **weight** | **string**| Weight | 
-  **quantity** | **string**| Quantity | 
-  **sourcePincode** | **string**| Source Pincode | 
-  **destinationPincode** | **string**| Destination Pincode | 
+  **destinationPincode** | **int32**|  | 
+  **productCode** | **string**|  | 
+  **quantity** | **int32**|  | 
+  **sourcePincode** | **int32**|  | 
+  **weight** | **float32**|  | 
 
 ### Return type
 
-[**HandlerResponse**](handler.Response.md)
+[**ResponseGetDirectPostTariffApiResponse**](response.GetDirectPostTariffAPIResponse.md)
 
 ### Authorization
 
@@ -384,23 +383,23 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **DomesticproductsTariffEmoGet**
-> HandlerResponse DomesticproductsTariffEmoGet(ctx, productCode, eMOAmount)
-Get Emo Tariff
+# **DomesticTariffsEmoGet**
+> ResponseGetEmoTariffApiResponse DomesticTariffsEmoGet(ctx, productCode, emoAmount)
+Get EMO tariff based on product code and EMO amount
 
-Gives tariff for Emo
+Calculate the EMO tariff using the product code and the EMO amount provided.
 
 ### Required Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **productCode** | **string**| Product Code | 
-  **eMOAmount** | **float32**| EMOAmount | 
+  **productCode** | **string**| Product code | 
+  **emoAmount** | **float32**| EMO Amount | 
 
 ### Return type
 
-[**HandlerResponse**](handler.Response.md)
+[**ResponseGetEmoTariffApiResponse**](response.GetEMOTariffAPIResponse.md)
 
 ### Authorization
 
@@ -413,23 +412,23 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **DomesticproductsTariffIpoGet**
-> HandlerResponse DomesticproductsTariffIpoGet(ctx, productCode, iPOAmount)
-Get IPO Tariff
+# **DomesticTariffsIpoGet**
+> ResponseGetIpoTariffApiResponse DomesticTariffsIpoGet(ctx, productCode, ipoAmount)
+Get IPO tariff based on product code and IPO amount
 
-Gives tariff for IPO
+Calculate the IPO tariff using the product code and the IPO amount provided.
 
 ### Required Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **productCode** | **string**| Product Code | 
-  **iPOAmount** | **float32**| IPO Amount | 
+  **productCode** | **string**| Product code | 
+  **ipoAmount** | **float32**| IPO Amount | 
 
 ### Return type
 
-[**HandlerResponse**](handler.Response.md)
+[**ResponseGetIpoTariffApiResponse**](response.GetIPOTariffAPIResponse.md)
 
 ### Authorization
 
@@ -442,39 +441,39 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **DomesticproductsTariffLetterGet**
-> HandlerResponse DomesticproductsTariffLetterGet(ctx, productCode, weight, optional)
-Get Letter Tariff
+# **DomesticTariffsLetterCardsGet**
+> ResponseGetLetterCardTariffApiResponse DomesticTariffsLetterCardsGet(ctx, productCode, weight, optional)
+Get lettercard tariff based on various parameters
 
-Gives tariff for Letter
+Calculate the lettercard tariff using product details and additional optional parameters.
 
 ### Required Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **productCode** | **string**| Product Code | 
-  **weight** | **string**| Weight | 
- **optional** | ***DomesticTariffApiDomesticproductsTariffLetterGetOpts** | optional parameters | nil if no parameters
+  **productCode** | **string**|  | 
+  **weight** | **float32**|  | 
+ **optional** | ***DomesticTariffApiDomesticTariffsLetterCardsGetOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a DomesticTariffApiDomesticproductsTariffLetterGetOpts struct
+Optional parameters are passed through a pointer to a DomesticTariffApiDomesticTariffsLetterCardsGetOpts struct
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
 
- **rEG** | **optional.String**| Reg | 
- **iNS** | **optional.String**| Ins | 
- **aCK** | **optional.String**| Ack | 
- **vPP** | **optional.String**| Vpp | 
- **length** | **optional.String**| Length | 
- **width** | **optional.String**| Width | 
- **height** | **optional.String**| Height | 
+ **aCK** | **optional.String**|  | 
+ **iNS** | **optional.String**|  | 
+ **rEG** | **optional.String**|  | 
+ **vPP** | **optional.String**|  | 
+ **height** | **optional.Float32**|  | 
+ **length** | **optional.Float32**|  | 
+ **width** | **optional.Float32**|  | 
 
 ### Return type
 
-[**HandlerResponse**](handler.Response.md)
+[**ResponseGetLetterCardTariffApiResponse**](response.GetLetterCardTariffAPIResponse.md)
 
 ### Authorization
 
@@ -487,36 +486,39 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **DomesticproductsTariffLettercardGet**
-> HandlerResponse DomesticproductsTariffLettercardGet(ctx, productCode, weight, optional)
-Get Letter Card Tariff
+# **DomesticTariffsLettersGet**
+> ResponseGetLetterTariffApiResponse DomesticTariffsLettersGet(ctx, productCode, weight, optional)
+Get letter tariff based on various parameters
 
-Gives tariff for Letter Card
+Calculate the letter tariff using product details and additional parameters.
 
 ### Required Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **productCode** | **string**| Product Code | 
-  **weight** | **string**| Weight | 
- **optional** | ***DomesticTariffApiDomesticproductsTariffLettercardGetOpts** | optional parameters | nil if no parameters
+  **productCode** | **string**|  | 
+  **weight** | **float32**|  | 
+ **optional** | ***DomesticTariffApiDomesticTariffsLettersGetOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a DomesticTariffApiDomesticproductsTariffLettercardGetOpts struct
+Optional parameters are passed through a pointer to a DomesticTariffApiDomesticTariffsLettersGetOpts struct
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
 
- **rEG** | **optional.String**| Reg | 
- **aCK** | **optional.String**| Ack | 
- **length** | **optional.String**| Length | 
- **width** | **optional.String**| Width | 
+ **aCK** | **optional.String**|  | 
+ **iNS** | **optional.String**|  | 
+ **rEG** | **optional.String**|  | 
+ **vPP** | **optional.String**|  | 
+ **height** | **optional.Float32**|  | 
+ **length** | **optional.Float32**|  | 
+ **width** | **optional.Float32**|  | 
 
 ### Return type
 
-[**HandlerResponse**](handler.Response.md)
+[**ResponseGetLetterTariffApiResponse**](response.GetLetterTariffAPIResponse.md)
 
 ### Authorization
 
@@ -529,25 +531,25 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **DomesticproductsTariffMagazinepostGet**
-> HandlerResponse DomesticproductsTariffMagazinepostGet(ctx, productCode, weight, sourcePincode, destinationPincode, optional)
-Get Magazine Post Tariff
+# **DomesticTariffsMagazinePostsGet**
+> ResponseGetMagazinePostTariffApiResponse DomesticTariffsMagazinePostsGet(ctx, destinationPincode, productCode, sourcePincode, weight, optional)
+Get Magazine Post tariff based on product code, weight, dimensions, and pincodes
 
-Gives tariff for Magazine Post
+Calculate the Magazine Post tariff using the product code, weight, dimensions (length, width, height), and source/destination pincodes.
 
 ### Required Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **productCode** | **string**| Product Code | 
-  **weight** | **string**| Weight | 
-  **sourcePincode** | **string**| Source Pincode | 
-  **destinationPincode** | **string**| Destination Pincode | 
- **optional** | ***DomesticTariffApiDomesticproductsTariffMagazinepostGetOpts** | optional parameters | nil if no parameters
+  **destinationPincode** | **int32**|  | 
+  **productCode** | **string**|  | 
+  **sourcePincode** | **int32**|  | 
+  **weight** | **float32**| Accepts int strings and floats | 
+ **optional** | ***DomesticTariffApiDomesticTariffsMagazinePostsGetOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a DomesticTariffApiDomesticproductsTariffMagazinepostGetOpts struct
+Optional parameters are passed through a pointer to a DomesticTariffApiDomesticTariffsMagazinePostsGetOpts struct
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -555,13 +557,13 @@ Name | Type | Description  | Notes
 
 
 
- **length** | **optional.String**| Length | 
- **width** | **optional.String**| Width | 
- **height** | **optional.String**| Height | 
+ **height** | **optional.Float32**|  | 
+ **length** | **optional.Float32**|  | 
+ **width** | **optional.Float32**|  | 
 
 ### Return type
 
-[**HandlerResponse**](handler.Response.md)
+[**ResponseGetMagazinePostTariffApiResponse**](response.GetMagazinePostTariffAPIResponse.md)
 
 ### Authorization
 
@@ -574,24 +576,24 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **DomesticproductsTariffNationalbillmailGet**
-> HandlerResponse DomesticproductsTariffNationalbillmailGet(ctx, productCode, weight, quantity)
-Get National Bill Mail Tariff
+# **DomesticTariffsNationalBillMailsGet**
+> ResponseGetBillMailTariffApiResponse DomesticTariffsNationalBillMailsGet(ctx, productCode, quantity, weight)
+Get National Bill Mail tariff based on product code, weight, and quantity
 
-Gives tariff for National Bill Mail Service
+Calculate the National Bill Mail tariff using the product code, weight, and quantity provided.
 
 ### Required Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **productCode** | **string**| Product Code | 
-  **weight** | **float32**| Weight | 
-  **quantity** | **int32**| Quantity | 
+  **productCode** | **string**|  | 
+  **quantity** | **int32**|  | 
+  **weight** | **float32**|  | 
 
 ### Return type
 
-[**HandlerResponse**](handler.Response.md)
+[**ResponseGetBillMailTariffApiResponse**](response.GetBillMailTariffAPIResponse.md)
 
 ### Authorization
 
@@ -604,40 +606,40 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **DomesticproductsTariffNewspaperGet**
-> HandlerResponse DomesticproductsTariffNewspaperGet(ctx, productCode, weight, optional)
-Get Newspaper Tariff
+# **DomesticTariffsNewspaperBundlesGet**
+> ResponseGetNewspaperBundleTariffApiResponse DomesticTariffsNewspaperBundlesGet(ctx, productCode, weight, optional)
+Get newspaper bundle tariff based on various parameters
 
-Gives tariff for Newspaper
+Calculate the newspaper bundle tariff using product details and additional optional parameters.
 
 ### Required Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **productCode** | **string**| Product Code | 
-  **weight** | **string**| Weight | 
- **optional** | ***DomesticTariffApiDomesticproductsTariffNewspaperGetOpts** | optional parameters | nil if no parameters
+  **productCode** | **string**|  | 
+  **weight** | **float32**|  | 
+ **optional** | ***DomesticTariffApiDomesticTariffsNewspaperBundlesGetOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a DomesticTariffApiDomesticproductsTariffNewspaperGetOpts struct
+Optional parameters are passed through a pointer to a DomesticTariffApiDomesticTariffsNewspaperBundlesGetOpts struct
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
 
- **rEG** | **optional.String**| Reg | 
- **iNS** | **optional.String**| Ins | 
- **aCK** | **optional.String**| Ack | 
- **vPP** | **optional.String**| Vpp | 
- **aMS** | **optional.String**| Ams | 
- **length** | **optional.String**| Length | 
- **width** | **optional.String**| Width | 
- **height** | **optional.String**| Height | 
+ **aCK** | **optional.String**|  | 
+ **aMS** | **optional.String**|  | 
+ **iNS** | **optional.String**|  | 
+ **rEG** | **optional.String**|  | 
+ **vPP** | **optional.String**|  | 
+ **height** | **optional.Float32**|  | 
+ **length** | **optional.Float32**|  | 
+ **width** | **optional.Float32**|  | 
 
 ### Return type
 
-[**HandlerResponse**](handler.Response.md)
+[**ResponseGetNewspaperBundleTariffApiResponse**](response.GetNewspaperBundleTariffAPIResponse.md)
 
 ### Authorization
 
@@ -650,40 +652,40 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **DomesticproductsTariffNewspaperbundleGet**
-> HandlerResponse DomesticproductsTariffNewspaperbundleGet(ctx, productCode, weight, optional)
-Get Newspaper Bundle Tariff
+# **DomesticTariffsNewspapersGet**
+> ResponseGetNewspaperTariffApiResponse DomesticTariffsNewspapersGet(ctx, productCode, weight, optional)
+Get newspaper tariff based on various parameters
 
-Gives tariff for Newspaper Bundle
+Calculate the newspaper tariff using product details and additional optional parameters.
 
 ### Required Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **productCode** | **string**| Product Code | 
-  **weight** | **string**| Weight | 
- **optional** | ***DomesticTariffApiDomesticproductsTariffNewspaperbundleGetOpts** | optional parameters | nil if no parameters
+  **productCode** | **string**|  | 
+  **weight** | **float32**|  | 
+ **optional** | ***DomesticTariffApiDomesticTariffsNewspapersGetOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a DomesticTariffApiDomesticproductsTariffNewspaperbundleGetOpts struct
+Optional parameters are passed through a pointer to a DomesticTariffApiDomesticTariffsNewspapersGetOpts struct
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
 
- **rEG** | **optional.String**| Reg | 
- **iNS** | **optional.String**| Ins | 
- **aCK** | **optional.String**| Ack | 
- **vPP** | **optional.String**| Vpp | 
- **aMS** | **optional.String**| Ams | 
- **length** | **optional.String**| Length | 
- **width** | **optional.String**| Width | 
- **height** | **optional.String**| Height | 
+ **aCK** | **optional.String**|  | 
+ **aMS** | **optional.String**|  | 
+ **iNS** | **optional.String**|  | 
+ **rEG** | **optional.String**|  | 
+ **vPP** | **optional.String**|  | 
+ **height** | **optional.Float32**|  | 
+ **length** | **optional.Float32**|  | 
+ **width** | **optional.Float32**|  | 
 
 ### Return type
 
-[**HandlerResponse**](handler.Response.md)
+[**ResponseGetNewspaperTariffApiResponse**](response.GetNewspaperTariffAPIResponse.md)
 
 ### Authorization
 
@@ -696,22 +698,22 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **DomesticproductsTariffNonvariantproductsProductCodeGet**
-> HandlerResponse DomesticproductsTariffNonvariantproductsProductCodeGet(ctx, productCode)
-Get Non Variant Tariff
+# **DomesticTariffsNonVariantsGet**
+> ResponseListNonVariantProductApiResponse DomesticTariffsNonVariantsGet(ctx, productCode)
+Get the non-variant product tariff based on the product code
 
-Gives tariff for Non Variant Products
+Retrieve the tariff information for a non-variant product using its product code.
 
 ### Required Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **productCode** | **string**| Product Code | 
+  **productCode** | **string**| Product code | 
 
 ### Return type
 
-[**HandlerResponse**](handler.Response.md)
+[**ResponseListNonVariantProductApiResponse**](response.ListNonVariantProductAPIResponse.md)
 
 ### Authorization
 
@@ -724,41 +726,41 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **DomesticproductsTariffParcelGet**
-> HandlerResponse DomesticproductsTariffParcelGet(ctx, productCode, weight, optional)
-Get Parcel Tariff
+# **DomesticTariffsParcelsGet**
+> ResponseGetParcelTariffApiResponse DomesticTariffsParcelsGet(ctx, productCode, weight, optional)
+Get parcel tariff based on various parameters
 
-Gives tariff for Parcel
+Calculate the parcel tariff using product details and various additional parameters.
 
 ### Required Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **productCode** | **string**| Product Code | 
-  **weight** | **string**| Weight | 
- **optional** | ***DomesticTariffApiDomesticproductsTariffParcelGetOpts** | optional parameters | nil if no parameters
+  **productCode** | **string**|  | 
+  **weight** | **float32**|  | 
+ **optional** | ***DomesticTariffApiDomesticTariffsParcelsGetOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a DomesticTariffApiDomesticproductsTariffParcelGetOpts struct
+Optional parameters are passed through a pointer to a DomesticTariffApiDomesticTariffsParcelsGetOpts struct
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
 
- **rEG** | **optional.String**| Reg | 
- **iNS** | **optional.String**| Ins | 
- **aCK** | **optional.String**| Ack | 
- **vPP** | **optional.String**| Vpp | 
- **aMS** | **optional.String**| Ams | 
- **length** | **optional.String**| Length | 
- **width** | **optional.String**| Width | 
- **height** | **optional.String**| Height | 
- **diameter** | **optional.String**| Diameter | 
+ **aCK** | **optional.String**|  | 
+ **aMS** | **optional.String**|  | 
+ **iNS** | **optional.String**|  | 
+ **rEG** | **optional.String**|  | 
+ **vPP** | **optional.String**|  | 
+ **diameter** | **optional.Float32**|  | 
+ **height** | **optional.Float32**|  | 
+ **length** | **optional.Float32**|  | 
+ **width** | **optional.Float32**|  | 
 
 ### Return type
 
-[**HandlerResponse**](handler.Response.md)
+[**ResponseGetParcelTariffApiResponse**](response.GetParcelTariffAPIResponse.md)
 
 ### Authorization
 
@@ -771,41 +773,41 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **DomesticproductsTariffPatternsamplepacketGet**
-> HandlerResponse DomesticproductsTariffPatternsamplepacketGet(ctx, productCode, weight, optional)
-Get Pattern Sample Packet Tariff
+# **DomesticTariffsPatternSamplePacketsGet**
+> ResponseGetPatternSamplePacketTariffApiResponse DomesticTariffsPatternSamplePacketsGet(ctx, productCode, weight, optional)
+Get pattern sample packet tariff based on various parameters
 
-Gives tariff for Pattern Sample Packet
+Calculate the pattern sample packet tariff using product details and additional optional parameters.
 
 ### Required Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **productCode** | **string**| Product Code | 
-  **weight** | **string**| Weight | 
- **optional** | ***DomesticTariffApiDomesticproductsTariffPatternsamplepacketGetOpts** | optional parameters | nil if no parameters
+  **productCode** | **string**|  | 
+  **weight** | **float32**|  | 
+ **optional** | ***DomesticTariffApiDomesticTariffsPatternSamplePacketsGetOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a DomesticTariffApiDomesticproductsTariffPatternsamplepacketGetOpts struct
+Optional parameters are passed through a pointer to a DomesticTariffApiDomesticTariffsPatternSamplePacketsGetOpts struct
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
 
- **rEG** | **optional.String**| Reg | 
- **iNS** | **optional.String**| Ins | 
- **aCK** | **optional.String**| Ack | 
- **vPP** | **optional.String**| Vpp | 
- **aMS** | **optional.String**| Ams | 
- **length** | **optional.String**| Length | 
- **width** | **optional.String**| Width | 
- **height** | **optional.String**| Height | 
- **diameter** | **optional.String**| Diameter | 
+ **aCK** | **optional.String**|  | 
+ **aMS** | **optional.String**|  | 
+ **iNS** | **optional.String**|  | 
+ **rEG** | **optional.String**|  | 
+ **vPP** | **optional.String**|  | 
+ **diameter** | **optional.Float32**|  | 
+ **height** | **optional.Float32**|  | 
+ **length** | **optional.Float32**|  | 
+ **width** | **optional.Float32**|  | 
 
 ### Return type
 
-[**HandlerResponse**](handler.Response.md)
+[**ResponseGetPatternSamplePacketTariffApiResponse**](response.GetPatternSamplePacketTariffAPIResponse.md)
 
 ### Authorization
 
@@ -818,34 +820,38 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **DomesticproductsTariffPostcardGet**
-> HandlerResponse DomesticproductsTariffPostcardGet(ctx, productCode, optional)
-Get Post Card Tariff
+# **DomesticTariffsPostCardsGet**
+> ResponseGetPostCardTariffApiResponse DomesticTariffsPostCardsGet(ctx, productCode, optional)
+Get Post Card tariff based on product code, weight, length, and width
 
-Gives tariff for Post Card
+Calculate the Post Card tariff using the product code, weight, length, and width provided.
 
 ### Required Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **productCode** | **string**| Product Code | 
- **optional** | ***DomesticTariffApiDomesticproductsTariffPostcardGetOpts** | optional parameters | nil if no parameters
+  **productCode** | **string**|  | 
+ **optional** | ***DomesticTariffApiDomesticTariffsPostCardsGetOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a DomesticTariffApiDomesticproductsTariffPostcardGetOpts struct
+Optional parameters are passed through a pointer to a DomesticTariffApiDomesticTariffsPostCardsGetOpts struct
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
- **rEG** | **optional.String**| Reg | 
- **aCK** | **optional.String**| Ack | 
- **length** | **optional.String**| Length | 
- **width** | **optional.String**| Width | 
+ **aCK** | **optional.String**|  | 
+ **aMS** | **optional.String**|  | 
+ **iNS** | **optional.String**|  | 
+ **rEG** | **optional.String**|  | 
+ **vPP** | **optional.String**|  | 
+ **length** | **optional.Float32**|  | 
+ **weight** | **optional.Float32**|  | 
+ **width** | **optional.Float32**|  | 
 
 ### Return type
 
-[**HandlerResponse**](handler.Response.md)
+[**ResponseGetPostCardTariffApiResponse**](response.GetPostCardTariffAPIResponse.md)
 
 ### Authorization
 
@@ -858,42 +864,42 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **DomesticproductsTariffPrintedbookGet**
-> HandlerResponse DomesticproductsTariffPrintedbookGet(ctx, productCode, weight, optional)
-Get Printed Book Tariff
+# **DomesticTariffsPrintedBooksGet**
+> ResponseGetPrintedBookTariffApiResponse DomesticTariffsPrintedBooksGet(ctx, productCode, weight, optional)
+Get printed book tariff based on various parameters
 
-Gives tariff for Printed Book
+Calculate the printed book tariff using product details and additional optional parameters.
 
 ### Required Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **productCode** | **string**| Product Code | 
-  **weight** | **string**| Weight | 
- **optional** | ***DomesticTariffApiDomesticproductsTariffPrintedbookGetOpts** | optional parameters | nil if no parameters
+  **productCode** | **string**|  | 
+  **weight** | **float32**|  | 
+ **optional** | ***DomesticTariffApiDomesticTariffsPrintedBooksGetOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a DomesticTariffApiDomesticproductsTariffPrintedbookGetOpts struct
+Optional parameters are passed through a pointer to a DomesticTariffApiDomesticTariffsPrintedBooksGetOpts struct
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
 
- **rEG** | **optional.String**| Reg | 
- **rEGC** | **optional.String**| RegC | 
- **iNS** | **optional.String**| Ins | 
- **aCK** | **optional.String**| Ack | 
- **vPP** | **optional.String**| Vpp | 
- **aMS** | **optional.String**| Ams | 
- **length** | **optional.String**| Length | 
- **width** | **optional.String**| Width | 
- **height** | **optional.String**| Height | 
- **diameter** | **optional.String**| Diameter | 
+ **aCK** | **optional.String**|  | 
+ **aMS** | **optional.String**|  | 
+ **iNS** | **optional.String**|  | 
+ **rEG** | **optional.String**|  | 
+ **rEGC** | **optional.String**|  | 
+ **vPP** | **optional.String**|  | 
+ **diameter** | **optional.Float32**|  | 
+ **height** | **optional.Float32**|  | 
+ **length** | **optional.Float32**|  | 
+ **width** | **optional.Float32**|  | 
 
 ### Return type
 
-[**HandlerResponse**](handler.Response.md)
+[**ResponseGetPrintedBookTariffApiResponse**](response.GetPrintedBookTariffAPIResponse.md)
 
 ### Authorization
 
@@ -906,22 +912,22 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **DomesticproductsTariffRetailproductsProductCodeGet**
-> HandlerResponse DomesticproductsTariffRetailproductsProductCodeGet(ctx, productCode)
-Get Retail Post Tariff
+# **DomesticTariffsRetailsGet**
+> ResponseListRetailPostApiResponse DomesticTariffsRetailsGet(ctx, productCode)
+Get the retail post product tariff based on the product code
 
-Gives tariff for Retail Post
+Retrieve the tariff information for a retail post product using its product code.
 
 ### Required Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **productCode** | **string**| Product Code | 
+  **productCode** | **string**| Product code | 
 
 ### Return type
 
-[**HandlerResponse**](handler.Response.md)
+[**ResponseListRetailPostApiResponse**](response.ListRetailPostAPIResponse.md)
 
 ### Authorization
 
@@ -934,25 +940,25 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **DomesticproductsTariffSpeedpostGet**
-> HandlerResponse DomesticproductsTariffSpeedpostGet(ctx, productCode, weight, sourcePincode, destinationPincode, optional)
-Get Domestic Speed Post Tariff
+# **DomesticTariffsSpeedPostsGet**
+> ResponseGetSpeedLetterTariffApiResponse DomesticTariffsSpeedPostsGet(ctx, destinationPincode, productCode, sourcePincode, weight, optional)
+Get speed letter tariff based on various parameters
 
-Gives tariff for Domestic Speed Post
+Calculate the speed letter tariff using product details and additional optional parameters.
 
 ### Required Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **productCode** | **string**| Product Code | 
-  **weight** | **string**| Weight | 
-  **sourcePincode** | **string**| Source Pincode | 
-  **destinationPincode** | **string**| Destination Pincode | 
- **optional** | ***DomesticTariffApiDomesticproductsTariffSpeedpostGetOpts** | optional parameters | nil if no parameters
+  **destinationPincode** | **int32**|  | 
+  **productCode** | **string**|  | 
+  **sourcePincode** | **int32**|  | 
+  **weight** | **float32**|  | 
+ **optional** | ***DomesticTariffApiDomesticTariffsSpeedPostsGetOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a DomesticTariffApiDomesticproductsTariffSpeedpostGetOpts struct
+Optional parameters are passed through a pointer to a DomesticTariffApiDomesticTariffsSpeedPostsGetOpts struct
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -960,21 +966,21 @@ Name | Type | Description  | Notes
 
 
 
- **rEG** | **optional.String**| Reg | 
- **iNS** | **optional.String**| Ins | 
- **iNSC** | **optional.String**| InsC | 
- **pOD** | **optional.String**| Pod | 
- **aCK** | **optional.String**| Ack | 
- **vPP** | **optional.String**| Vpp | 
- **aMS** | **optional.String**| Ams | 
- **length** | **optional.String**| Length | 
- **width** | **optional.String**| Width | 
- **height** | **optional.String**| Height | 
- **diameter** | **optional.String**| Diameter | 
+ **aCK** | **optional.String**|  | 
+ **aMS** | **optional.String**|  | 
+ **iNS** | **optional.String**|  | 
+ **iNSC** | **optional.String**|  | 
+ **pOD** | **optional.String**|  | 
+ **rEG** | **optional.String**|  | 
+ **vPP** | **optional.String**|  | 
+ **diameter** | **optional.Float32**|  | 
+ **height** | **optional.Float32**|  | 
+ **length** | **optional.Float32**|  | 
+ **width** | **optional.Float32**|  | 
 
 ### Return type
 
-[**HandlerResponse**](handler.Response.md)
+[**ResponseGetSpeedLetterTariffApiResponse**](response.GetSpeedLetterTariffAPIResponse.md)
 
 ### Authorization
 

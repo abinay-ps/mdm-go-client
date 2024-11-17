@@ -1,53 +1,53 @@
 # \InternationalTariffApi
 
-All URIs are relative to *https://localhost:8080/v1*
+All URIs are relative to *http://localhost:8080/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**InternationalproductsTariffBlindliteratureGet**](InternationalTariffApi.md#InternationalproductsTariffBlindliteratureGet) | **Get** /internationalproducts/tariff/blindliterature | Get International Blind Literature Tariff
-[**InternationalproductsTariffBulkbagGet**](InternationalTariffApi.md#InternationalproductsTariffBulkbagGet) | **Get** /internationalproducts/tariff/bulkbag | Get International Bulk Bag Tariff
-[**InternationalproductsTariffEmsGet**](InternationalTariffApi.md#InternationalproductsTariffEmsGet) | **Get** /internationalproducts/tariff/ems | Get International Speed Document Tariff
-[**InternationalproductsTariffItpsGet**](InternationalTariffApi.md#InternationalproductsTariffItpsGet) | **Get** /internationalproducts/tariff/itps | Get International Tracked Packets Tariff
-[**InternationalproductsTariffLetterGet**](InternationalTariffApi.md#InternationalproductsTariffLetterGet) | **Get** /internationalproducts/tariff/letter | Get International Letter Tariff
-[**InternationalproductsTariffParcelGet**](InternationalTariffApi.md#InternationalproductsTariffParcelGet) | **Get** /internationalproducts/tariff/parcel | Get International Parcel Tariff
-[**InternationalproductsTariffPrintedpapersGet**](InternationalTariffApi.md#InternationalproductsTariffPrintedpapersGet) | **Get** /internationalproducts/tariff/printedpapers | Get International Printed Papers Tariff
-[**InternationalproductsTariffSmallpacketsGet**](InternationalTariffApi.md#InternationalproductsTariffSmallpacketsGet) | **Get** /internationalproducts/tariff/smallpackets | Get International Small Packets Tariff
+[**InternationalTariffsBlindLiteraturesGet**](InternationalTariffApi.md#InternationalTariffsBlindLiteraturesGet) | **Get** /international-tariffs/blind-literatures | Calculate the tariff for international blind literature
+[**InternationalTariffsBulkBagsGet**](InternationalTariffApi.md#InternationalTariffsBulkBagsGet) | **Get** /international-tariffs/bulk-bags | Calculate the tariff for international bulk bags
+[**InternationalTariffsEmsGet**](InternationalTariffApi.md#InternationalTariffsEmsGet) | **Get** /international-tariffs/ems | Calculate the tariff for international speed documents
+[**InternationalTariffsItpsGet**](InternationalTariffApi.md#InternationalTariffsItpsGet) | **Get** /international-tariffs/itps | Calculate the tariff for international tracked packets
+[**InternationalTariffsLettersGet**](InternationalTariffApi.md#InternationalTariffsLettersGet) | **Get** /international-tariffs/letters | Calculate the tariff for foreign letters
+[**InternationalTariffsParcelsGet**](InternationalTariffApi.md#InternationalTariffsParcelsGet) | **Get** /international-tariffs/parcels | Calculate the tariff for foreign parcels
+[**InternationalTariffsPrintedPapersGet**](InternationalTariffApi.md#InternationalTariffsPrintedPapersGet) | **Get** /international-tariffs/printed-papers | Calculate the tariff for international printed papers
+[**InternationalTariffsSmallPacketsGet**](InternationalTariffApi.md#InternationalTariffsSmallPacketsGet) | **Get** /international-tariffs/small-packets | Calculate the tariff for international small packets
 
 
-# **InternationalproductsTariffBlindliteratureGet**
-> HandlerResponse InternationalproductsTariffBlindliteratureGet(ctx, productCode, weight, countryCode, optional)
-Get International Blind Literature Tariff
+# **InternationalTariffsBlindLiteraturesGet**
+> ResponseGetFgnBlindLiteratureTariffApiResponse InternationalTariffsBlindLiteraturesGet(ctx, countryCode, productCode, weight, optional)
+Calculate the tariff for international blind literature
 
-Gives tariff for International Blind Literature Tariff
+Calculates the tariff information for international blind literature based on various parameters, including product code, country code, weight, dimensions, and value-added services (VAS).
 
 ### Required Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **productCode** | **string**| Product Code | 
-  **weight** | **string**| Weight | 
-  **countryCode** | **string**| Country Code | 
- **optional** | ***InternationalTariffApiInternationalproductsTariffBlindliteratureGetOpts** | optional parameters | nil if no parameters
+  **countryCode** | **string**|  | 
+  **productCode** | **string**|  | 
+  **weight** | **float32**|  | 
+ **optional** | ***InternationalTariffApiInternationalTariffsBlindLiteraturesGetOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a InternationalTariffApiInternationalproductsTariffBlindliteratureGetOpts struct
+Optional parameters are passed through a pointer to a InternationalTariffApiInternationalTariffsBlindLiteraturesGetOpts struct
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
 
 
- **length** | **optional.String**| Length | 
- **width** | **optional.String**| Width | 
- **height** | **optional.String**| Height | 
- **diameter** | **optional.String**| Diameter | 
- **modeOfTransmission** | **optional.String**| Mode of Transmission | 
- **vasCode** | [**optional.Interface of []string**](string.md)| VAS Codes | 
+ **diameter** | **optional.Float32**|  | 
+ **height** | **optional.Float32**|  | 
+ **length** | **optional.Float32**|  | 
+ **modeOfTransmission** | **optional.String**|  | 
+ **vasCode** | [**optional.Interface of []string**](string.md)|  | 
+ **width** | **optional.Float32**|  | 
 
 ### Return type
 
-[**HandlerResponse**](handler.Response.md)
+[**ResponseGetFgnBlindLiteratureTariffApiResponse**](response.GetFgnBlindLiteratureTariffAPIResponse.md)
 
 ### Authorization
 
@@ -60,41 +60,41 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **InternationalproductsTariffBulkbagGet**
-> HandlerResponse InternationalproductsTariffBulkbagGet(ctx, productCode, weight, countryCode, optional)
-Get International Bulk Bag Tariff
+# **InternationalTariffsBulkBagsGet**
+> ResponseGetFgnBulkBagTariffApiResponse InternationalTariffsBulkBagsGet(ctx, countryCode, productCode, weight, optional)
+Calculate the tariff for international bulk bags
 
-Gives tariff for International Bulk Bag Tariff
+Calculates the tariff information for international bulk bags based on various parameters, including product code, country code, weight, dimensions, and value-added services (VAS).
 
 ### Required Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **productCode** | **string**| Product Code | 
-  **weight** | **string**| Weight | 
-  **countryCode** | **string**| Country Code | 
- **optional** | ***InternationalTariffApiInternationalproductsTariffBulkbagGetOpts** | optional parameters | nil if no parameters
+  **countryCode** | **string**|  | 
+  **productCode** | **string**|  | 
+  **weight** | **float32**|  | 
+ **optional** | ***InternationalTariffApiInternationalTariffsBulkBagsGetOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a InternationalTariffApiInternationalproductsTariffBulkbagGetOpts struct
+Optional parameters are passed through a pointer to a InternationalTariffApiInternationalTariffsBulkBagsGetOpts struct
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
 
 
- **length** | **optional.String**| Length | 
- **width** | **optional.String**| Width | 
- **height** | **optional.String**| Height | 
- **diameter** | **optional.String**| Diameter | 
- **iNSAMOUNT** | **optional.String**| Ins Amount | 
- **modeOfTransmission** | **optional.String**| Mode of Transmission | 
- **vasCode** | [**optional.Interface of []string**](string.md)| VAS Codes | 
+ **diameter** | **optional.Float32**|  | 
+ **height** | **optional.Float32**|  | 
+ **insAmount** | **optional.String**|  | 
+ **length** | **optional.Float32**|  | 
+ **modeOfTransmission** | **optional.String**|  | 
+ **vasCode** | [**optional.Interface of []string**](string.md)|  | 
+ **width** | **optional.Float32**|  | 
 
 ### Return type
 
-[**HandlerResponse**](handler.Response.md)
+[**ResponseGetFgnBulkBagTariffApiResponse**](response.GetFgnBulkBagTariffAPIResponse.md)
 
 ### Authorization
 
@@ -107,40 +107,41 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **InternationalproductsTariffEmsGet**
-> HandlerResponse InternationalproductsTariffEmsGet(ctx, productCode, weight, countryCode, optional)
-Get International Speed Document Tariff
+# **InternationalTariffsEmsGet**
+> ResponseGetFgnSpeedDocumentTariffApiResponse InternationalTariffsEmsGet(ctx, countryCode, productCode, weight, optional)
+Calculate the tariff for international speed documents
 
-Gives tariff for International Speed Document Tariff
+Calculate the tariff information for international speed documents based on various parameters, including product code, country code, weight, dimensions, and value-added services (VAS).
 
 ### Required Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **productCode** | **string**| Product Code | 
-  **weight** | **string**| Weight | 
-  **countryCode** | **string**| Country Code | 
- **optional** | ***InternationalTariffApiInternationalproductsTariffEmsGetOpts** | optional parameters | nil if no parameters
+  **countryCode** | **string**|  | 
+  **productCode** | **string**|  | 
+  **weight** | **float32**|  | 
+ **optional** | ***InternationalTariffApiInternationalTariffsEmsGetOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a InternationalTariffApiInternationalproductsTariffEmsGetOpts struct
+Optional parameters are passed through a pointer to a InternationalTariffApiInternationalTariffsEmsGetOpts struct
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
 
 
- **length** | **optional.String**| Length | 
- **width** | **optional.String**| Width | 
- **height** | **optional.String**| Height | 
- **diameter** | **optional.String**| Diameter | 
- **modeOfTransmission** | **optional.String**| Mode of Transmission | 
- **vasCode** | [**optional.Interface of []string**](string.md)| VAS Codes | 
+ **diameter** | **optional.Float32**|  | 
+ **height** | **optional.Float32**|  | 
+ **insAmount** | **optional.Float32**|  | 
+ **length** | **optional.Float32**|  | 
+ **modeOfTransmission** | **optional.String**|  | 
+ **vasCode** | [**optional.Interface of []string**](string.md)|  | 
+ **width** | **optional.Float32**|  | 
 
 ### Return type
 
-[**HandlerResponse**](handler.Response.md)
+[**ResponseGetFgnSpeedDocumentTariffApiResponse**](response.GetFgnSpeedDocumentTariffAPIResponse.md)
 
 ### Authorization
 
@@ -153,40 +154,41 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **InternationalproductsTariffItpsGet**
-> HandlerResponse InternationalproductsTariffItpsGet(ctx, productCode, weight, countryCode, optional)
-Get International Tracked Packets Tariff
+# **InternationalTariffsItpsGet**
+> ResponseGetFgnItpsTariffApiResponse InternationalTariffsItpsGet(ctx, countryCode, productCode, weight, optional)
+Calculate the tariff for international tracked packets
 
-Gives tariff for International Tracked Packets Tariff
+Calculate the tariff information for international tracked packets based on various parameters, including product code, country code, weight, dimensions, and value-added services (VAS).
 
 ### Required Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **productCode** | **string**| Product Code | 
-  **weight** | **string**| Weight | 
-  **countryCode** | **string**| Country Code | 
- **optional** | ***InternationalTariffApiInternationalproductsTariffItpsGetOpts** | optional parameters | nil if no parameters
+  **countryCode** | **string**|  | 
+  **productCode** | **string**|  | 
+  **weight** | **float32**|  | 
+ **optional** | ***InternationalTariffApiInternationalTariffsItpsGetOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a InternationalTariffApiInternationalproductsTariffItpsGetOpts struct
+Optional parameters are passed through a pointer to a InternationalTariffApiInternationalTariffsItpsGetOpts struct
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
 
 
- **length** | **optional.String**| Length | 
- **width** | **optional.String**| Width | 
- **height** | **optional.String**| Height | 
- **diameter** | **optional.String**| Diameter | 
- **modeOfTransmission** | **optional.String**| Mode of Transmission | 
- **vasCode** | [**optional.Interface of []string**](string.md)| VAS Codes | 
+ **diameter** | **optional.Float32**|  | 
+ **height** | **optional.Float32**|  | 
+ **insAmount** | **optional.Float32**|  | 
+ **length** | **optional.Float32**|  | 
+ **modeOfTransmission** | **optional.String**|  | 
+ **vasCode** | [**optional.Interface of []string**](string.md)|  | 
+ **width** | **optional.Float32**|  | 
 
 ### Return type
 
-[**HandlerResponse**](handler.Response.md)
+[**ResponseGetFgnItpsTariffApiResponse**](response.GetFgnITPSTariffAPIResponse.md)
 
 ### Authorization
 
@@ -199,41 +201,40 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **InternationalproductsTariffLetterGet**
-> HandlerResponse InternationalproductsTariffLetterGet(ctx, productCode, weight, countryCode, optional)
-Get International Letter Tariff
+# **InternationalTariffsLettersGet**
+> ResponseGetFgnLetterTariffApiResponse InternationalTariffsLettersGet(ctx, countryCode, productCode, weight, optional)
+Calculate the tariff for foreign letters
 
-Gives tariff for International Letter
+Calculates the tariff information for a foreign letter based on various parameters, including product code, country code, weight, dimensions, and value-added services (VAS).
 
 ### Required Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **productCode** | **string**| Product Code | 
-  **weight** | **string**| Weight | 
-  **countryCode** | **string**| Country Code | 
- **optional** | ***InternationalTariffApiInternationalproductsTariffLetterGetOpts** | optional parameters | nil if no parameters
+  **countryCode** | **string**|  | 
+  **productCode** | **string**|  | 
+  **weight** | **float32**|  | 
+ **optional** | ***InternationalTariffApiInternationalTariffsLettersGetOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a InternationalTariffApiInternationalproductsTariffLetterGetOpts struct
+Optional parameters are passed through a pointer to a InternationalTariffApiInternationalTariffsLettersGetOpts struct
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
 
 
- **length** | **optional.String**| Length | 
- **width** | **optional.String**| Width | 
- **height** | **optional.String**| Height | 
- **diameter** | **optional.String**| Diameter | 
- **modeOfTransmission** | **optional.String**| Mode of Transmission | 
- **vasCode** | [**optional.Interface of []string**](string.md)| VAS Codes | 
- **iNSAMOUNT** | **optional.String**| Ins Amount | 
+ **height** | **optional.Float32**|  | 
+ **insAmount** | **optional.Float32**|  | 
+ **length** | **optional.Float32**|  | 
+ **modeOfTransmission** | **optional.String**|  | 
+ **vasCode** | [**optional.Interface of []string**](string.md)|  | 
+ **width** | **optional.Float32**|  | 
 
 ### Return type
 
-[**HandlerResponse**](handler.Response.md)
+[**ResponseGetFgnLetterTariffApiResponse**](response.GetFgnLetterTariffAPIResponse.md)
 
 ### Authorization
 
@@ -246,41 +247,41 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **InternationalproductsTariffParcelGet**
-> HandlerResponse InternationalproductsTariffParcelGet(ctx, productCode, weight, countryCode, optional)
-Get International Parcel Tariff
+# **InternationalTariffsParcelsGet**
+> ResponseGetFgnParcelTariffApiResponse InternationalTariffsParcelsGet(ctx, countryCode, productCode, weight, optional)
+Calculate the tariff for foreign parcels
 
-Gives tariff for International Parcel Tariff
+Calculate the tariff information for a foreign parcel based on various parameters, including product code, country code, weight, dimensions, and value-added services (VAS).
 
 ### Required Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **productCode** | **string**| Product Code | 
-  **weight** | **string**| Weight | 
-  **countryCode** | **string**| Country Code | 
- **optional** | ***InternationalTariffApiInternationalproductsTariffParcelGetOpts** | optional parameters | nil if no parameters
+  **countryCode** | **string**|  | 
+  **productCode** | **string**|  | 
+  **weight** | **float32**|  | 
+ **optional** | ***InternationalTariffApiInternationalTariffsParcelsGetOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a InternationalTariffApiInternationalproductsTariffParcelGetOpts struct
+Optional parameters are passed through a pointer to a InternationalTariffApiInternationalTariffsParcelsGetOpts struct
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
 
 
- **length** | **optional.String**| Length | 
- **width** | **optional.String**| Width | 
- **height** | **optional.String**| Height | 
- **diameter** | **optional.String**| Diameter | 
- **modeOfTransmission** | **optional.String**| Mode of Transmission | 
- **vasCode** | [**optional.Interface of []string**](string.md)| VAS Codes | 
- **iNSAMOUNT** | **optional.String**| INS Amount | 
+ **diameter** | **optional.Float32**|  | 
+ **height** | **optional.Float32**|  | 
+ **insAmount** | **optional.Float32**|  | 
+ **length** | **optional.Float32**|  | 
+ **modeOfTransmission** | **optional.String**|  | 
+ **vasCode** | [**optional.Interface of []string**](string.md)|  | 
+ **width** | **optional.Float32**|  | 
 
 ### Return type
 
-[**HandlerResponse**](handler.Response.md)
+[**ResponseGetFgnParcelTariffApiResponse**](response.GetFgnParcelTariffAPIResponse.md)
 
 ### Authorization
 
@@ -293,41 +294,41 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **InternationalproductsTariffPrintedpapersGet**
-> HandlerResponse InternationalproductsTariffPrintedpapersGet(ctx, productCode, weight, countryCode, optional)
-Get International Printed Papers Tariff
+# **InternationalTariffsPrintedPapersGet**
+> ResponseGetFgnPrintedPapersTariffApiResponse InternationalTariffsPrintedPapersGet(ctx, countryCode, productCode, weight, optional)
+Calculate the tariff for international printed papers
 
-Gives tariff for International Printed Papers Tariff
+Calculate the tariff information for international printed papers based on various parameters, including product code, country code, weight, dimensions, and value-added services (VAS).
 
 ### Required Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **productCode** | **string**| Product Code | 
-  **weight** | **string**| Weight | 
-  **countryCode** | **string**| Country Code | 
- **optional** | ***InternationalTariffApiInternationalproductsTariffPrintedpapersGetOpts** | optional parameters | nil if no parameters
+  **countryCode** | **string**|  | 
+  **productCode** | **string**|  | 
+  **weight** | **float32**|  | 
+ **optional** | ***InternationalTariffApiInternationalTariffsPrintedPapersGetOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a InternationalTariffApiInternationalproductsTariffPrintedpapersGetOpts struct
+Optional parameters are passed through a pointer to a InternationalTariffApiInternationalTariffsPrintedPapersGetOpts struct
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
 
 
- **length** | **optional.String**| Length | 
- **width** | **optional.String**| Width | 
- **height** | **optional.String**| Height | 
- **diameter** | **optional.String**| Diameter | 
- **iNSAMOUNT** | **optional.String**| INS Amount | 
- **modeOfTransmission** | **optional.String**| Mode of Transmission | 
- **vasCode** | [**optional.Interface of []string**](string.md)| VAS Codes | 
+ **diameter** | **optional.Float32**|  | 
+ **height** | **optional.Float32**|  | 
+ **insAmount** | **optional.Float32**|  | 
+ **length** | **optional.Float32**|  | 
+ **modeOfTransmission** | **optional.String**|  | 
+ **vasCode** | [**optional.Interface of []string**](string.md)|  | 
+ **width** | **optional.Float32**|  | 
 
 ### Return type
 
-[**HandlerResponse**](handler.Response.md)
+[**ResponseGetFgnPrintedPapersTariffApiResponse**](response.GetFgnPrintedPapersTariffAPIResponse.md)
 
 ### Authorization
 
@@ -340,41 +341,41 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **InternationalproductsTariffSmallpacketsGet**
-> HandlerResponse InternationalproductsTariffSmallpacketsGet(ctx, productCode, weight, countryCode, optional)
-Get International Small Packets Tariff
+# **InternationalTariffsSmallPacketsGet**
+> ResponseGetFgnSmallPacketsTariffApiResponse InternationalTariffsSmallPacketsGet(ctx, countryCode, productCode, weight, optional)
+Calculate the tariff for international small packets
 
-Gives tariff for International Small Packets Tariff
+Calculate the tariff information for international small packets based on various parameters, including product code, country code, weight, dimensions, and value-added services (VAS).
 
 ### Required Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **productCode** | **string**| Product Code | 
-  **weight** | **string**| Weight | 
-  **countryCode** | **string**| Country Code | 
- **optional** | ***InternationalTariffApiInternationalproductsTariffSmallpacketsGetOpts** | optional parameters | nil if no parameters
+  **countryCode** | **string**|  | 
+  **productCode** | **string**|  | 
+  **weight** | **float32**|  | 
+ **optional** | ***InternationalTariffApiInternationalTariffsSmallPacketsGetOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a InternationalTariffApiInternationalproductsTariffSmallpacketsGetOpts struct
+Optional parameters are passed through a pointer to a InternationalTariffApiInternationalTariffsSmallPacketsGetOpts struct
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
 
 
- **length** | **optional.String**| Length | 
- **width** | **optional.String**| Width | 
- **height** | **optional.String**| Height | 
- **diameter** | **optional.String**| Diameter | 
- **iNSAMOUNT** | **optional.String**| INS Amount | 
- **modeOfTransmission** | **optional.String**| Mode of Transmission | 
- **vasCode** | [**optional.Interface of []string**](string.md)| VAS Codes | 
+ **diameter** | **optional.Float32**|  | 
+ **height** | **optional.Float32**|  | 
+ **insAmount** | **optional.Float32**|  | 
+ **length** | **optional.Float32**|  | 
+ **modeOfTransmission** | **optional.String**|  | 
+ **vasCode** | [**optional.Interface of []string**](string.md)|  | 
+ **width** | **optional.Float32**|  | 
 
 ### Return type
 
-[**HandlerResponse**](handler.Response.md)
+[**ResponseGetFgnSmallPacketsTariffApiResponse**](response.GetFgnSmallPacketsTariffAPIResponse.md)
 
 ### Authorization
 
